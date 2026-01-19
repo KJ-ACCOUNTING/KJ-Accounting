@@ -1,0 +1,117 @@
+/* Base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #111;
+}
+
+/* HERO */
+.hero {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 4px solid #c9a24d;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #e5e5e5;
+}
+
+.hero .button {
+    display: inline-block;
+    margin-top: 25px;
+    background: #c9a24d;
+    color: #000;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+.container {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    text-align: center;
+    color: #c9a24d;
+    margin-bottom: 30px;
+}
+
+/* WHITE CONTENT BLOCKS */
+.service,
+.why-list li {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* SERVICES GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.service h3 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* WHY CHOOSE US */
+.why-list {
+    list-style: none;
+    padding: 0;
+}
+
+.why-list li {
+    border-left: 6px solid #c9a24d;
+    margin-bottom: 15px;
+}
+
+/* CONTACT */
+.contact-section {
+    text-align: center;
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 85%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+.contact-form button {
+    background: #c9a24d;
+    color: #000;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 2px solid #c9a24d;
+}
