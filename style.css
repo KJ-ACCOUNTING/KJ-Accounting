@@ -1,3 +1,18 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gold: #c9a24d;
+}
+
+/* RESET */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--black);
+    color: var(--white);
+}
+
 /* Base */
 body {
     font-family: Arial, sans-serif;
@@ -115,3 +130,4 @@ body {
     padding: 30px 20px;
     border-top: 2px solid #c9a24d;
 }
+
