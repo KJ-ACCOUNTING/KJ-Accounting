@@ -1,202 +1,53 @@
 /* =========================
-   COLOUR PALETTE
-========================= */
-:root {
-    --black: #000000;
-    --white: #ffffff;
-    --gold: #c9a24d;
-    --light-grey: #e5e5e5;
-}
-
-/* DEFAULT TEXT */
-p, li {
-    color: #e5e5e5;
-}
-
-/* =========================
    GLOBAL RESET
 ========================= */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   COLOUR VARIABLES
+========================= */
+:root {
+    --black: #000000;
+    --off-black: #0a0a0a;
+    --white: #ffffff;
+    --gold: #c9a227;
+    --light-grey: #f5f5f5;
+    --dark-text: #111111;
+}
+
+/* =========================
+   BODY & TYPOGRAPHY
+========================= */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--black);
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--off-black);
     color: var(--white);
     line-height: 1.6;
 }
 
-/* =========================
-   HERO / HEADER
-========================= */
-.hero {
-    background-color: var(--black);
-    text-align: center;
-    padding: 100px 20px;
-    border-bottom: 3px solid var(--gold);
-}
-
-.logo {
-    max-width: 50px;
-   height: 50px;
-   display: block;
-    margin: 0 auto 25px;
-}
-
-.hero h1 {
-    font-size: 2.6rem;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.hero p {
-    color: var(--light-grey);
-    max-width: 650px;
-    margin: 0 auto 30px;
-    font-size: 1.1rem;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-.button {
-    display: inline-block;
-    background-color: var(--gold);
-    color: var(--black);
-    padding: 14px 34px;
-    border-radius: 6px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #b8923f;
-}
-
-/* =========================
-   SECTION CONTAINER
-========================= */
-.container {
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-/* =========================
-   HEADINGS
-========================= */
-.container h2 {
-    text-align: center;
+h1, h2, h3 {
     color: var(--gold);
-    margin-bottom: 40px;
+    font-weight: 600;
     letter-spacing: 0.5px;
 }
 
-/* =========================
-   SERVICES
-========================= */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 30px;
-}
-
-.service {
-    background-color: var(--white);
-    color: #111;
-    padding: 30px;
-    border-radius: 10px;
-    border-top: 4px solid var(--gold);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.service h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-/* WHITE CARD TEXT FIX */
-.service,
-.service p,
-.service h3,
-.why-list li,
-.why-list li p {
-    color: #111;
+p {
+    color: #e5e5e5;
 }
 
 /* =========================
-   WHY CHOOSE US
+   HEADER
 ========================= */
-.why-list {
-    list-style: none;
-    padding: 0;
-}
-
-.why-list li {
-    background-color: var(--white);
-    color: #111;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-left: 6px solid var(--gold);
-    border-radius: 6px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-
-/* =========================
-   CONTACT
-========================= */
-.contact-section {
-    text-align: center;
-}
-
-.contact-section p {
-    color: var(--light-grey);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 85%;
-    max-width: 500px;
-    padding: 12px;
-    margin: 10px auto;
-    display: block;
-    border-radius: 6px;
-    border: none;
-    font-size: 1rem;
-}
-
-.contact-form button {
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-/* =========================
-   FOOTER
-========================= */
-.footer {
+header {
     background-color: var(--black);
-    color: #aaa;
-    text-align: center;
-    padding: 30px 20px;
-    border-top: 2px solid var(--gold);
-    font-size: 0.9rem;
-}
+    padding: 40px 20px;
+    text-align:
 
-/* =========================
-   MOBILE TWEAKS
-========================= */
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
 
-    .logo {
-        max-width: 85px;
-    }
-}
 
 
 
