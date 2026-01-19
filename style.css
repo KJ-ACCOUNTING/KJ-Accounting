@@ -8,6 +8,11 @@
     --light-grey: #e5e5e5;
 }
 
+/* DEFAULT TEXT */
+p, li {
+    color: #e5e5e5;
+}
+
 /* =========================
    GLOBAL RESET
 ========================= */
@@ -113,6 +118,15 @@ body {
     margin-bottom: 10px;
 }
 
+/* WHITE CARD TEXT FIX */
+.service,
+.service p,
+.service h3,
+.why-list li,
+.why-list li p {
+    color: #111;
+}
+
 /* =========================
    WHY CHOOSE US
 ========================= */
@@ -183,4 +197,5 @@ body {
         max-width: 85px;
     }
 }
+
 
