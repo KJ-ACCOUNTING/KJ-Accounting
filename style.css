@@ -1,133 +1,183 @@
+/* =========================
+   COLOUR PALETTE
+========================= */
 :root {
     --black: #000000;
     --white: #ffffff;
     --gold: #c9a24d;
+    --light-grey: #e5e5e5;
 }
 
-/* RESET */
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: var(--black);
+    font-family: Arial, sans-serif;
+    background-color: var(--black);
     color: var(--white);
+    line-height: 1.6;
 }
 
-/* Base */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #000;
-    color: #111;
-}
-
-/* HERO */
+/* =========================
+   HERO / HEADER
+========================= */
 .hero {
-    background: #000;
-    color: #fff;
+    background-color: var(--black);
     text-align: center;
     padding: 100px 20px;
-    border-bottom: 4px solid #c9a24d;
+    border-bottom: 3px solid var(--gold);
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 25px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #e5e5e5;
+    color: var(--light-grey);
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
 }
 
-.hero .button {
+/* =========================
+   BUTTONS
+========================= */
+.button {
     display: inline-block;
-    margin-top: 25px;
-    background: #c9a24d;
-    color: #000;
-    padding: 14px 30px;
-    text-decoration: none;
+    background-color: var(--gold);
+    color: var(--black);
+    padding: 14px 34px;
     border-radius: 6px;
     font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-/* SECTIONS */
+.button:hover {
+    background-color: #b8923f;
+}
+
+/* =========================
+   SECTION CONTAINER
+========================= */
 .container {
     max-width: 1100px;
-    margin: 70px auto;
+    margin: 80px auto;
     padding: 0 20px;
 }
 
+/* =========================
+   HEADINGS
+========================= */
 .container h2 {
     text-align: center;
-    color: #c9a24d;
-    margin-bottom: 30px;
+    color: var(--gold);
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
 }
 
-/* WHITE CONTENT BLOCKS */
-.service,
-.why-list li {
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
-/* SERVICES GRID */
+/* =========================
+   SERVICES
+========================= */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+.service {
+    background-color: var(--white);
+    color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .service h3 {
-    color: #000;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
-/* WHY CHOOSE US */
+/* =========================
+   WHY CHOOSE US
+========================= */
 .why-list {
     list-style: none;
     padding: 0;
 }
 
 .why-list li {
-    border-left: 6px solid #c9a24d;
+    background-color: var(--white);
+    color: #111;
+    padding: 20px;
     margin-bottom: 15px;
+    border-left: 6px solid var(--gold);
+    border-radius: 6px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 .contact-section {
     text-align: center;
-    color: #fff;
+}
+
+.contact-section p {
+    color: var(--light-grey);
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 85%;
+    max-width: 500px;
     padding: 12px;
-    margin: 10px 0;
+    margin: 10px auto;
+    display: block;
     border-radius: 6px;
     border: none;
+    font-size: 1rem;
 }
 
 .contact-form button {
-    background: #c9a24d;
-    color: #000;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
+    margin-top: 15px;
     cursor: pointer;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 .footer {
-    background: #000;
+    background-color: var(--black);
     color: #aaa;
     text-align: center;
     padding: 30px 20px;
-    border-top: 2px solid #c9a24d;
+    border-top: 2px solid var(--gold);
+    font-size: 0.9rem;
 }
 
+/* =========================
+   MOBILE TWEAKS
+========================= */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        max-width: 85px;
+    }
+}
