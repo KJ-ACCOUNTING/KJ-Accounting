@@ -35,7 +35,9 @@ body {
 
 .logo {
     max-width: 100px;
-    margin-bottom: 25px;
+   height: auto;
+   display: block;
+    margin: 0 auto 25px;
 }
 
 .hero h1 {
@@ -181,3 +183,4 @@ body {
         max-width: 85px;
     }
 }
+
